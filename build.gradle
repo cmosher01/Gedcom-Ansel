@@ -1,0 +1,12 @@
+apply plugin: 'java'
+
+group 'nu.mine.mosher.gedcom'
+version '1.0.0-SNAPSHOT'
+sourceCompatibility = JavaVersion.VERSION_1_8
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'http://mosher.mine.nu/nexus/repository/maven-public/'
+    }
+}

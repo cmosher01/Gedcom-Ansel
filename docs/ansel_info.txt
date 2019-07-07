@@ -1,0 +1,47 @@
+ANSEL:
+
+wikipedia table, same as ANSI/NISO Z39.47-1993 and -1985:
+
+00-7F: same as US-ASCII
+
+80-9F: undefined
+
+A0: undefined
+A1-AE
+AF: undefined
+
+B0-BA
+BB: undefined
+BC-BD
+BE-BF: undefined
+C0-C6
+C7-CF: undefined
+D0-DF: undefined
+E0-EF
+F0-FB
+FC-FD: undefined
+FE
+FF: undefined
+
+***wikipedia gedcom table extras:
+BE,25A1
+BF,25A0
+CD,0065
+CE,006F
+CF,00DF
+FC,0338
+
+marc21:
+C7: eszet
+C8: euro
+
+
+
+GEDCOM 5.5.1:
+omits A7,AC-AD,B7,BC-BD,C0-C2,C4,E0,EB,EC,EF,F2-F5,F7-FB
+***adds CF (eszet)
+
+
+MARC 21 pages:
+add 88,89,8D,8E,C7,C8
+

@@ -1,10 +1,10 @@
-apply plugin: 'java'
-
-group 'nu.mine.mosher.gedcom'
-version '1.0.0-SNAPSHOT'
-sourceCompatibility = JavaVersion.VERSION_1_8
-
-repositories {
-    mavenCentral()
-    jcenter()
+def inc(module) {
+    apply from: "${projectDir}/gradle/${module}.gradle"
 }
+
+inc('version')
+inc('project')
+inc('dependencies')
+inc('srcjar')
+inc('maven')
+inc('bintray')

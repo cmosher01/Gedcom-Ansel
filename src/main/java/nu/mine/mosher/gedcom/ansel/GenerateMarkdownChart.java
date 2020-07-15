@@ -8,12 +8,12 @@ public class GenerateMarkdownChart {
         System.out.println();
         System.out.println();
 
-        System.out.println("|    | _0  | _1  | _2  | _3  | _4  | _5  | _6  | _7  | _8  | _9  | _A  | _B  | _C  | _D  | _E  | _F  |");
-        System.out.println("|---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|");
+        System.out.println("|    | 8_  | 9_  | A_  | B_  | C_  | D_  | E_  | F_  |");
+        System.out.println("|---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|");
 
-        for (int hi = 0x08; hi < 0x10; ++hi) {
-            System.out.print(String.format("| %1x_ |",hi));
-            for (int lo = 0x00; lo < 0x10; ++lo) {
+        for (int lo = 0x00; lo < 0x10; ++lo) {
+            System.out.print(String.format("| _%1X |",lo));
+            for (int hi = 0x08; hi < 0x10; ++hi) {
                 final int ansel = (hi << 4) | lo;
                 final Integer c = AnselCharacterMap.map.get(ansel);
                 if (Objects.isNull(c)) {

@@ -15,13 +15,13 @@ import static nu.mine.mosher.gedcom.ansel.AnselCharacterMap.map;
  * @author Chris Mosher
  */
 public class GedcomAnselCharset extends Charset {
-    static final String name = "x-gedcom-ansel";
+    public static final String NAME = "x-gedcom-ansel";
 
     /**
      *
      */
     public GedcomAnselCharset() {
-        this(name, null);
+        this(NAME, null);
     }
 
     /**

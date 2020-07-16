@@ -25,7 +25,7 @@ public class GedcomAnselCharsetProvider extends CharsetProvider {
 
     @Override
     public Charset charsetForName(final String charsetName) {
-        if (!charsetName.equalsIgnoreCase(GedcomAnselCharset.name)) {
+        if (!charsetName.equalsIgnoreCase(GedcomAnselCharset.NAME)) {
             return null;
         }
 

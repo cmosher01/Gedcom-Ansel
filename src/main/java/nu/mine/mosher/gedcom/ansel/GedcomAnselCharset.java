@@ -21,7 +21,7 @@ public class GedcomAnselCharset extends Charset {
      *
      */
     public GedcomAnselCharset() {
-        this(NAME, null);
+        this(NAME, new String[] {"ANSEL"});
     }
 
     /**
